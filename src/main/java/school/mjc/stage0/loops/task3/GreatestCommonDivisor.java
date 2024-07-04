@@ -15,6 +15,6 @@ public class GreatestCommonDivisor {
             first = temp;
         }
 
-        System.out.println("Наибольший общий делитель: " + first);
+        System.out.println(first);
     }
 }

@@ -9,6 +9,6 @@ public class DigitsSum {
             sum += numberStr.charAt(i) - '0'; // Вычитание символа '0' преобразует код символа цифры в ее числовое значение
         }
 
-        System.out.println("Сумма цифр числа: " + sum);
+        System.out.println(sum);
     }
 }
