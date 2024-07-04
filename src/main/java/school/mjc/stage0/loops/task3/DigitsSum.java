@@ -3,10 +3,12 @@ package school.mjc.stage0.loops.task3;
 public class DigitsSum {
     public void printDigitsSum(int t){
         int sum = 0;
-        String numberStr = Integer.toString(t);
+        String numberStr = String.valueOf(Math.abs(t)); // Преобразование числа в строку и учет отрицательных чисел
+
         for (int i = 0; i < numberStr.length(); i++) {
-            sum += numberStr.charAt(i) - '0'; // Преобразование символа в числовое значение
+            sum += numberStr.charAt(i) - '0'; // Вычитание символа '0' преобразует код символа цифры в ее числовое значение
         }
-        System.out.println(sum);
+
+        System.out.println("Сумма цифр числа: " + sum);
     }
 }
